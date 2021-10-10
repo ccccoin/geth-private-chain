@@ -1,5 +1,5 @@
 # geth-private-chain
-This is a demo about how to set up a private ETH chain on your own network.
+This is a tutorial about how to set up a private ETH chain on your own network.
 
 ## 簡介
 要連上 Ethereum 就需要安裝 Ethereum Node，在這邊我們選擇使用 Golang 開發的 ETH 客戶端 Geth 來安裝 Ethereum Node。
@@ -182,7 +182,7 @@ admin.addPeer("enode://dbd5e2bb32a71901cb25abf8a0254bfcb3236831785553cf8607fc547
 
 ## 使用網頁錢包
 
-當然你也可以不設置節點，僅透過 MetaMask 錢包（瀏覽器外，無法挖礦)，
+當然你也可以不設置節點，僅透過 MetaMask 錢包（瀏覽器外掛，無法挖礦)，
 從切換網路的下拉選單，選擇我們的私鏈網 9901，方法為自訂 RPC:
 ```
 網路名稱 隨意

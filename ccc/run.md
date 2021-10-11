@@ -70,6 +70,21 @@ INFO [10-11|05:13:33.104] Allocated trie memory caches
     clean=49.00MiB dirty=82.00MiB
 ```
 
+開始挖礦
+
+
+```
+> personal.newAccount()
+Passphrase: 
+Repeat passphrase: 
+INFO [10-11|05:24:35.432] Your new key was generated
+    address=0x8115cc77Cb6C6d5cA0A2aD521ACf81C3c7002121
+WARN [10-11|05:24:35.471] Please backup your key file!
+    path=/root/.ethereum/ropsten/keystore/UTC--2021-10-11T05-24-20.860400669Z--8115cc77cb6c6d5ca0a2ad521acf81c3c7002121       
+WARN [10-11|05:24:35.471] Please remember your password!       
+"0x8115cc77cb6c6d5ca0a2ad521acf81c3c7002121"
+```
+
 
 ## 私鏈
 

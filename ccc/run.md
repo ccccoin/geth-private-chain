@@ -85,6 +85,39 @@ WARN [10-11|05:24:35.471] Please remember your password!
 "0x8115cc77cb6c6d5ca0a2ad521acf81c3c7002121"
 ```
 
+然後怪怪的
+
+```
+> admin.nodeInfo.enode
+"enode://591f250a1afb24f6932be6e01cdccb4849989242d7f0c8c2e54ecadd9e68fb8110662b3eeaf89137898894fbcf81a75207856a59c2f7966314b4ac51e6120e55@172.104.100.202:30303"
+> admin.addPeer("enode://591f250a1afb24f6932be6e01cdccb4849989242d7f0c8c2e54ecadd9e68fb8110662b3eeaf89137898894fbcf81a75207856a59c2f7966314b4ac51e6120e55@172.104.100.202:30303")
+true
+> eth.blockNumber
+0
+> admin.peers
+[]
+> miner.start(1)
+INFO [10-11|05:30:15.614] Updated mining threads
+    threads=1
+INFO [10-11|05:30:15.615] Transaction pool price threshold updated price=1,000,000,000
+ERROR[10-11|05:30:15.615] Cannot start mining without etherbase    err="etherbase must be explicitly specified"
+WARN [10-11|05:30:15.616] Served miner_start
+    reqid=19 t=2.620749ms err="etherbase missing: etherbase must be explicitly specified"
+Error: etherbase missing: etherbase must be explicitly specified
+        at web3.js:6357:37(47)
+        at web3.js:5091:62(37)
+        at <eval>:1:12(4)
+
+> eth.accounts[0]
+undefined
+> > eth.accounts[0]
+SyntaxError: (anonymous): Line 1:1 Unexpected token >
+> admin.peers
+[]
+>  eth.accounts
+[]
+```
+
 
 ## 私鏈
 

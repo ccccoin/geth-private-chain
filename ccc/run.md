@@ -1,4 +1,61 @@
-# ccc run
+## 測試鏈
+
+
+```
+root@localhost:~# geth --ropsten
+INFO [10-11|05:08:40.783] Starting Geth on Ropsten testnet... 
+INFO [10-11|05:08:40.786] Maximum peer count
+    ETH=50 LES=0 total=50
+INFO [10-11|05:08:40.786] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"WARN [10-11|05:08:40.790] Sanitizing cache to Go's GC limits   
+    provided=1024 updated=328
+INFO [10-11|05:08:40.790] Set global gas cap
+    cap=50,000,000
+INFO [10-11|05:08:40.791] Allocated trie memory caches
+    clean=49.00MiB dirty=82.00MiB
+INFO [10-11|05:08:40.791] Allocated cache and file handles     
+    database=/root/.ethereum/ropsten/geth/chaindata cache=164.00MiB handles=524,288
+INFO [10-11|05:08:40.799] Opened ancient database
+    database=/root/.ethereum/ropsten/geth/chaindata/ancient readonly=false
+INFO [10-11|05:08:40.799] Writing custom genesis block
+INFO [10-11|05:08:40.828] Persisted trie from memory database  
+    nodes=355 size=50.41KiB time=2.611028ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-11|05:08:40.829] Initialised chain configuration      
+    config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Byzantium: 1700000 Constantinople: 4230000 Petersburg: 4939394 Istanbul: 6485846, Muir Glacier: 7117117, Berlin: 9812189, London: 10499401, Engine: ethash}"
+INFO [10-11|05:08:40.830] Disk storage enabled for ethash caches   dir=/root/.ethereum/ropsten/geth/ethash count=3
+INFO [10-11|05:08:40.830] Disk storage enabled for ethash DAGs 
+    dir=/root/.ethash                       count=2
+INFO [10-11|05:08:40.830] Initialising Ethereum protocol       
+    network=3 dbversion=<nil>
+INFO [10-11|05:08:40.831] Loaded most recent local header      
+    number=0 hash=419410..ca4a2d td=1,048,576 age=52y6mo1w     
+INFO [10-11|05:08:40.831] Loaded most recent local full block  
+    number=0 hash=419410..ca4a2d td=1,048,576 age=52y6mo1w     
+INFO [10-11|05:08:40.831] Loaded most recent local fast block  
+    number=0 hash=419410..ca4a2d td=1,048,576 age=52y6mo1w     
+WARN [10-11|05:08:40.832] Failed to load snapshot, regenerating    err="missing or corrupted snapshot"
+INFO [10-11|05:08:40.832] Rebuilding state snapshot
+INFO [10-11|05:08:40.833] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [10-11|05:08:40.833] Gasprice oracle is ignoring threshold set threshold=2
+WARN [10-11|05:08:40.833] Error reading unclean shutdown markers   error="leveldb: not found"
+INFO [10-11|05:08:40.834] Starting peer-to-peer node
+    instance=Geth/v1.10.9-stable-eae3b194/linux-amd64/go1.17   
+INFO [10-11|05:08:40.838] New local node record
+    seq=1,633,928,920,838 id=41bc6af9b346ff86 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [10-11|05:08:40.840] IPC endpoint opened
+    url=/root/.ethereum/ropsten/geth.ipc
+INFO [10-11|05:08:40.841] Resuming state snapshot generation   
+    root=217b0b..62b77b accounts=0 slots=0 storage=0.00B elapsed=8.948ms
+INFO [10-11|05:08:40.850] Generated state snapshot
+    accounts=257 slots=0 storage=9.55KiB elapsed=17.970ms      
+INFO [10-11|05:08:40.854] Started P2P networking
+    self=enode://591f250a1afb24f6932be6e01cdccb4849989242d7f0c8c2e54ecadd9e68fb8110662b3eeaf89137898894fbcf81a75207856a59c2f7966314b4ac51e6120e55@127.0.0.1:30303
+INFO [10-11|05:08:46.032] New local node record
+    seq=1,633,928,920,839 id=41bc6af9b346ff86 ip=172.104.100.202 udp=30303 tcp=30303
+INFO [10-11|05:08:51.190] Looking for peers
+    peercount=0 tried=16 static=0
+```
+
+## 私鏈
 
 ```
 root@localhost:~# mkdir chain

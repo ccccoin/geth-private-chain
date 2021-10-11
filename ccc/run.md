@@ -55,6 +55,22 @@ INFO [10-11|05:08:51.190] Looking for peers
     peercount=0 tried=16 static=0
 ```
 
+Console
+
+```
+root@localhost:~# geth --ropsten console
+INFO [10-11|05:13:33.095] Starting Geth on Ropsten testnet... 
+INFO [10-11|05:13:33.098] Maximum peer count
+    ETH=50 LES=0 total=50
+INFO [10-11|05:13:33.098] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"WARN [10-11|05:13:33.103] Sanitizing cache to Go's GC limits   
+    provided=1024 updated=328
+INFO [10-11|05:13:33.103] Set global gas cap
+    cap=50,000,000
+INFO [10-11|05:13:33.104] Allocated trie memory caches
+    clean=49.00MiB dirty=82.00MiB
+```
+
+
 ## 私鏈
 
 ```
